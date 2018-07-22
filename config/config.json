@@ -1,0 +1,125 @@
+{
+    "log": {
+        "access": "/var/log/v2ray/access.log",
+        "error": "/var/log/v2ray/error.log",
+        "loglevel": "warning"
+    },
+    "inbound": {
+        "port": 8001,
+        "protocol": "vmess",
+        "settings": {
+            "clients": [
+                {
+                    "id": "3b1d24ee-cfaa-5c29-612f-d59cb8702f69",
+                    "level": 1,
+                    "alterId": 100
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "h2",
+            "httpSettings": {
+                "host": ["z506xmia.tk"],
+                "path": "/"
+            },
+            "security": "tls",
+            "tlsSettings": {
+                "serverName": "z506xmia.tk",
+                "certificates": [
+                    {
+  "certificate": [
+    "-----BEGIN CERTIFICATE-----",
+    "MIIDKzCCAhOgAwIBAgIRAJeVXSShiaP88ORK6bEC30AwDQYJKoZIhvcNAQELBQAw",
+    "KDESMBAGA1UEChMJVjJSYXkgSW5jMRIwEAYDVQQDEwlWMlJheSBJbmMwHhcNMTgw",
+    "NzIxMjM1NTE2WhcNMTgxMDIwMDA1NTE2WjAoMRIwEAYDVQQKEwlWMlJheSBJbmMx",
+    "EjAQBgNVBAMTCVYyUmF5IEluYzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC",
+    "ggEBALIhv85xA8jYIvqaOcgh/tt/XiTHMrVkY66QGLP8hGU18Lb0zeLVa1U0IvEd",
+    "pCC6XMZdYM5e520PyyjY6dmEmHSasDB8CEzoyt2cPGJHHedbNM6h0DBrqVhuAQY0",
+    "7yCnQIrCQlQ66piBml5kPiEbV3il2NEZHPAECZ6z3TmKwrR6FG1ims3MuGFU0O+Y",
+    "dz8LnDVlpBPFFBLiJ5/LdadHG5wHVm7JTqp+C3Yt7lVqumU04655vDyjscNpYnXS",
+    "e4fix6ejpbN1H8KD4gfwkqmEdeBzPldC5NhapusD7G3M0dBHNb5FpSbdk7aCVkl1",
+    "qmpuUzeU2bVvaSwz0lJL8HdOAxkCAwEAAaNQME4wDgYDVR0PAQH/BAQDAgKkMBMG",
+    "A1UdJQQMMAoGCCsGAQUFBwMBMA8GA1UdEwEB/wQFMAMBAf8wFgYDVR0RBA8wDYIL",
+    "ejUwNnhtaWEudGswDQYJKoZIhvcNAQELBQADggEBAGpYwnadD7PZror0IdB+pqnJ",
+    "gYfNhJf1RorG1VeQlYF4lM+ltYvzX/2o7g6Vem6ht+/gmPYFN46Jmyj46Va7DEKi",
+    "3ZRz13HkkMBRUdPg4GkaBDXMkIxidykAjBh+N8r+Lehu69uROwkqcSSuvFjINzll",
+    "pNUMMp1aCtfwxnJV63wwIH2E8dkJROukBvLpxG6JCG/ETyahmXczQal7Q4+peOSz",
+    "hwvO0dBriD+H5HxdFeACV9MNSEnfGKIUXw4db9M49cNih8PbVBUsNiuUc5wJgRUs",
+    "2/pO7QlHMqqKObwxnfSDJvyAUOJaa+8V8+IZnVxq+6IzLZZzN4F3KXp6LSPBaz4=",
+    "-----END CERTIFICATE-----"
+  ],
+  "key": [
+    "-----BEGIN RSA PRIVATE KEY-----",
+    "MIIEowIBAAKCAQEAsiG/znEDyNgi+po5yCH+239eJMcytWRjrpAYs/yEZTXwtvTN",
+    "4tVrVTQi8R2kILpcxl1gzl7nbQ/LKNjp2YSYdJqwMHwITOjK3Zw8Ykcd51s0zqHQ",
+    "MGupWG4BBjTvIKdAisJCVDrqmIGaXmQ+IRtXeKXY0Rkc8AQJnrPdOYrCtHoUbWKa",
+    "zcy4YVTQ75h3PwucNWWkE8UUEuInn8t1p0cbnAdWbslOqn4Ldi3uVWq6ZTTjrnm8",
+    "PKOxw2liddJ7h+LHp6Ols3UfwoPiB/CSqYR14HM+V0Lk2Fqm6wPsbczR0Ec1vkWl",
+    "Jt2TtoJWSXWqam5TN5TZtW9pLDPSUkvwd04DGQIDAQABAoIBAD4O4/PYC6l9IzKL",
+    "aHYA4fk2dmX5wADR6Kh4KyMJZlacZDBZOSE9mRcmAsZdvUBprMiu33sGNToZtn2U",
+    "lGPjffmhqqA5leq1b3elZqQWgqSHce5LEWzNFUJpkJHI/0Yw/ptY8iLGI9Td0hnw",
+    "cnS2QdMWdGLkjOBRh8hygS/617pn+EjFPf5vI+U9wgNj+E2HqOYXppvzsGeFarZ6",
+    "JQo+rNIKvJl95b0EZEUjsvRFODVRnE6mz+FchU4VrCPzXyd5ZI4zUHW1lAu9Esme",
+    "H77pTMju8mIoVM5vi0rV2/evyYxkN9rBx120VITDp1il8LhwweCZ4dWsj3tk3M3p",
+    "jrUqpcECgYEA5+z3lPCTSUqVQIW/XGK2FVQ0eaYKGu/MUlslhGG/b2314TMl42MW",
+    "GM0/0gAViRq6e7EnIgNvsfXOftShZHdaSvf/iY4pVXg5xdefQOjLkFeNqoOqkXTR",
+    "ESl1fQcK73DZ7qwgRHlJ0XRXVtf0h/qmJpjFvPGLUSkU1sMteD+CzHcCgYEAxJ9N",
+    "WLRamKjwR2LI0/teyJB1A9FcHOQNMmvhu2c3C0CkCnGy2xm5vRe1VJMiGpGWu5X0",
+    "b29r5X4CSWtgxmTBCq8DvmYrkZX7jPRjg0y66xIvAONDCK8D0yxI7p8ivrctXVPg",
+    "dxvGgNsaLZcHZeh/8N2lSRTRMwMSgyb/Stg/4O8CgYEAu4jIlZ2Ga1AsqZS8rLaA",
+    "53RETk1thGR8wedDyezEQBUZKfUS4PAhUQK+ZU9+GnQLcLNJol5G9g59396NdlBw",
+    "KYipD5BtadgiVxDIjFLxL5EsU0HOLXnZB9iPUP7d38lP34c9PEEa6Iv7h5Rt/Xo2",
+    "2aTU17g03/apDBOcc8xfNncCgYAPTcrqZZdLnJKfK8wv27fj6oKBGpGN2h5A127J",
+    "dF4vbQeXnIPsU9NGKYs+mvkjkkNmNGTDK6v9P9KTvlzY9EymNTsYXcF0YnUi4n7A",
+    "YH+H/nFUI1w7V8v3atH+aLp+l6lbQ0UMYEgSDXu7Iq87ul4C9G2CA7HIw6t0M9vZ",
+    "Cn3mVwKBgFXyslmwWrvZx/UL7tcsr33ZM6PXuDNwrU9o4qt/igLeBfk13vh9rTfZ",
+    "jQBNLCzZYWywX4TT07WbXAZJMfFnNIv1qqjoOHxBrJLX5uZfVXYUEHMKsg5ElgKn",
+    "4auXxv1+/RMc7ULqevME121lblR6srtzN9lyQA/1sSH+TnRFBR6r",
+    "-----END RSA PRIVATE KEY-----"
+  ]
+                    }
+                ]
+            }
+        }
+    },
+    "outbound": {
+        "protocol": "freedom",
+        "settings": {}
+    },
+    "inboundDetour": [],
+    "outboundDetour": [
+        {
+            "protocol": "blackhole",
+            "settings": {},
+            "tag": "blocked"
+        }
+    ],
+    "routing": {
+        "strategy": "rules",
+        "settings": {
+            "rules": [
+                {
+                    "type": "field",
+                    "ip": [
+                        "0.0.0.0/8",
+                        "10.0.0.0/8",
+                        "100.64.0.0/10",
+                        "127.0.0.0/8",
+                        "169.254.0.0/16",
+                        "172.16.0.0/12",
+                        "192.0.0.0/24",
+                        "192.0.2.0/24",
+                        "192.168.0.0/16",
+                        "198.18.0.0/15",
+                        "198.51.100.0/24",
+                        "203.0.113.0/24",
+                        "::1/128",
+                        "fc00::/7",
+                        "fe80::/10"
+                    ],
+                    "outboundTag": "blocked"
+                }
+            ]
+        }
+    }
+}
