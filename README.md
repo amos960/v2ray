@@ -2,7 +2,7 @@
 ```
 bash <(curl -L -s https://install.direct/go.sh)
 mv /etc/v2ray/config.json /etc/v2ray/config.json.bak
-curl -L https://raw.githubusercontent.com/wangxunqi/project-v/master/config/config.json -o /etc/v2ray/config.json
+curl -L https://raw.githubusercontent.com/wangxunqi/project/master/config/config.json -o /etc/v2ray/config.json
 ```
 
 # Run
