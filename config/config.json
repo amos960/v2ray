@@ -18,10 +18,6 @@
         },
         "streamSettings": {
             "network": "ws"
-            "security": "auto",
-            "wsSettings": {
-            "connectionReuse": true,
-            }
         }
     },
     "outbound": {
