@@ -5,80 +5,21 @@
         "loglevel": "warning"
     },
     "inbound": {
-        "port": 443,
+        "port": 80,
         "protocol": "vmess",
         "settings": {
             "clients": [
                 {
-                    "id": "3b1d24ee-cfaa-5c29-612f-d59cb8702f69",
+                    "id": "2268c349-bc91-11e4-374a-3eb1b16b9198",
                     "level": 1,
                     "alterId": 100
                 }
             ]
         },
         "streamSettings": {
-            "network": "h2",
-            "httpSettings": {
-                "host": ["firewalld.tk"],
-                "path": "/stream"
-            },
-            "security": "tls",
-            "tlsSettings": {
-                "serverName": "firewalld.tk",
-                "certificates": [
-                    {
-  "certificate": [
-    "-----BEGIN CERTIFICATE-----",
-    "MIIDLDCCAhSgAwIBAgIRAJnpt8iNZ5DDNguKBylAKmMwDQYJKoZIhvcNAQELBQAw",
-    "KDESMBAGA1UEChMJVjJSYXkgSW5jMRIwEAYDVQQDEwlWMlJheSBJbmMwHhcNMTgw",
-    "NzMwMDg0MzA3WhcNMTgxMDI4MDk0MzA2WjAoMRIwEAYDVQQKEwlWMlJheSBJbmMx",
-    "EjAQBgNVBAMTCVYyUmF5IEluYzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC",
-    "ggEBAKiHyoEhEQDteL/g6Wd4iuR3CjL27gXbA3vkBirkr4I6rFsO7m7k8vtTvLOR",
-    "S5POsBsr5EwA2lyQD9Oq/0Uk5MfzRITQRXM4qKeESIGyxl4B5DvsBBpBm6nJNaJR",
-    "df77dWqmTyQ3afrj0Zjpf/VkdcMVVSSmlvGLzFh/MDNNCkT3Id1nEJ/zOkY9kgE5",
-    "AhVlaT+N6Dgi3+RTn1MvqWwQa8iYztFegdntUCia+DRgfE5YR43y7khGHapIDJk1",
-    "39aOX9jh2A8ZRH2iHRpjzWrew3H7dsfSahXFl5k06kEXaaWvIFarU8UnxZ73edyw",
-    "Q0YKdSs0GtkcS6shueM6toWiY60CAwEAAaNRME8wDgYDVR0PAQH/BAQDAgKkMBMG",
-    "A1UdJQQMMAoGCCsGAQUFBwMBMA8GA1UdEwEB/wQFMAMBAf8wFwYDVR0RBBAwDoIM",
-    "ZmlyZXdhbGxkLnRrMA0GCSqGSIb3DQEBCwUAA4IBAQCYFX/RzS+hvYRZ2/g/kEUR",
-    "00N58/L8SfPni4POJwx2+bTbR/1bf+E2woO5JLdf1YQqEoYfP52IQL4BSUAGSUlL",
-    "n6vblsioXcG8KU7mtj859bz8tiWN1PxdzlbHwnFfnpjjUgsR1QE4JsVg3p4jOKq3",
-    "pQAdT5M0u+gEut/UUL9tT7m5A1NQvH5eqAuwOZrrZ1LOcD1IoSW8p5Og9MYaFwqm",
-    "bOXSJm34LVTQi9mGdb3gC+9kijtPH9HGe0rgn2Ch++Ncwngu/Rmtk0CU6IY0lRSS",
-    "DlducLufTncQOd020MllYXOLFA/do26w2ukEv1iWpYMHCkj1k5pq16A9a/9YAbr/",
-    "-----END CERTIFICATE-----"
-  ],
-  "key": [
-    "-----BEGIN RSA PRIVATE KEY-----",
-    "MIIEogIBAAKCAQEAqIfKgSERAO14v+DpZ3iK5HcKMvbuBdsDe+QGKuSvgjqsWw7u",
-    "buTy+1O8s5FLk86wGyvkTADaXJAP06r/RSTkx/NEhNBFcziop4RIgbLGXgHkO+wE",
-    "GkGbqck1olF1/vt1aqZPJDdp+uPRmOl/9WR1wxVVJKaW8YvMWH8wM00KRPch3WcQ",
-    "n/M6Rj2SATkCFWVpP43oOCLf5FOfUy+pbBBryJjO0V6B2e1QKJr4NGB8TlhHjfLu",
-    "SEYdqkgMmTXf1o5f2OHYDxlEfaIdGmPNat7Dcft2x9JqFcWXmTTqQRdppa8gVqtT",
-    "xSfFnvd53LBDRgp1KzQa2RxLqyG54zq2haJjrQIDAQABAoIBAC2GwUWw0Q8XF49+",
-    "Co9RGPQu1CqAWjxqtb46ExBzRpY/k1/l4LNEVf9e15MKpQgAxcIRUVLWyCZJJH1h",
-    "rCPZm5QIO3JFcP13SNg3+/5NdRjgGe+2CkWtg4eSO1Ll/qIq+8UbuDVoYtDLykss",
-    "iMyZntZcZOvJtOz7fvBJK5QwM539VDPDuPvIsnl76B+aEvZ6apIKmixHzydqqg3c",
-    "5bpTRXVKU9ZolF9WQZsdMeD9Jn5LE5mfP4vCIoxCP9ZaUml04qz8dKIkObQKO8Gm",
-    "GeeaOsqEvd449ZfG9u+JiivPba+fFfaoa/suCORCy41RC1ScPEZEqfajm/VHOTdR",
-    "Y5Z2RGECgYEAwG8xKHTPXCAaS7M41AdA/QXimeMWvl+IbFDIV0BOqu4arZrgBWv5",
-    "dtKPWdw84O6HaIsL0PUxjyQzzy7faTMHmR9xiybZe4+FUxj6SBlafpueitafwFY6",
-    "AHkNS2mF48iiILxL7CmEFJiCZ/ljddsseKiyNLzvZ4FrlHFOyjjCHOMCgYEA4DM2",
-    "/ru3RPT/Rl6gebO35lGn4+w2a5CuuH8fM0uri7+K1patEJ3r+BZSsIhGqlzmtRE0",
-    "uA+dUKh7e6R+XKv7NNMh2I2oxEyQ71BlEtQPSB+YYChk7cHonaAXDbOvOyXcN2S4",
-    "cLHSItI7dsJhYlTk6hSZCBJ+St++9bCyvC32ci8CgYAqPP3MRH9zWDSNYyRZHdJ8",
-    "9zq6zmaimLOIGt8uj5X03NiMPI9pgT67fxIqBjZypMiiAMsyLW+YXLjmhAJTw/ip",
-    "+oXgpkFcZq88AyKEitQbMCtHjD56aDLJAckSQXI7AkHb75i2mJI+Nw+ApPPY3afQ",
-    "QC8FdmcSEA0+AvTpXDX3QwKBgFkZYWi4tyvLZcvUfVgAaTw6BUvaKwJyfE1MD901",
-    "3FXsaEPBm8O3zvhH/tKzRcoco38f+GCRrAZK/s/zXlh77Jhgs9m46nIgr5S70X87",
-    "EVurWsYUJ5ApeMVzwtWqLCCIekz1VStML+Owwvr+Yu9OJ68zQmHn35Ln+p7vewi4",
-    "B3H3AoGAZxEl7+D2GyUdXaASW4TWqXkuuMbrsCT8cjtIvuj+Hx9sW96FT4sUYFL7",
-    "1AXOL0Swo/a/JhdDpon1nLWg3IOgMdTkz44r+wHIw7XkH0O3KkzBCN+0tADtdd2s",
-    "UeeN0zaOwkfHsh+A+bCx49eHvrP2JkJPg2gdKrMPqCLmKBtKHpM=",
-    "-----END RSA PRIVATE KEY-----"
-  ]
-                    }
-                ]
+            "network": "ws"
+            "wsSettings": {
+            "path": "/stream"
             }
         }
     },
