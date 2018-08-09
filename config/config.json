@@ -18,8 +18,9 @@
         },
         "streamSettings": {
             "network": "ws"
+            "security": "auto",
             "wsSettings": {
-            "path": "/stream"
+            "connectionReuse": true,
             }
         }
     },
