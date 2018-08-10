@@ -5,19 +5,82 @@
         "loglevel": "warning"
     },
     "inbound": {
-        "port": 80,
+        "port": 443,
         "protocol": "vmess",
         "settings": {
             "clients": [
                 {
-                    "id": "2268c349-bc91-11e4-374a-3eb1b16b9198",
+                    "id": "1635a1b8-d317-321f-65a3-89d78179c40c",
                     "level": 1,
                     "alterId": 100
                 }
             ]
         },
         "streamSettings": {
-            "network": "ws"
+            "network": "h2",
+            "httpSettings": {
+            "host": ["v2stream.co.vu"],
+            "path": "/stream"
+            },
+            "security": "tls",
+            "tlsSettings": {
+                "serverName": "v2stream.co.vu",
+                "certificates": [
+{
+  "certificate": [
+    "-----BEGIN CERTIFICATE-----",
+    "MIIDLjCCAhagAwIBAgIRAICk1A0TkrxI76BPBBXuY28wDQYJKoZIhvcNAQELBQAw",
+    "KDESMBAGA1UEChMJVjJSYXkgSW5jMRIwEAYDVQQDEwlWMlJheSBJbmMwHhcNMTgw",
+    "ODEwMDMzNTE3WhcNMTgxMTA4MDQzNTE2WjAoMRIwEAYDVQQKEwlWMlJheSBJbmMx",
+    "EjAQBgNVBAMTCVYyUmF5IEluYzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC",
+    "ggEBAKPDHCspj4Xc8Ap6rcUQv8LzU78159mIn6WEMW6Q2ickn1aVNkAZM2AboWez",
+    "Gxt7pmwnhJxzHmk3VKyzkFB+jbqKgJFHh+GuUfeideA3z+i+oo+p0iMzHG8MeoeC",
+    "gBVH3Rb2WSUySa2rWX93sFUs1vNmJLEM6c3R/NbznkHE/jkh0kU2GQeiXY58cF+Q",
+    "S4+I2yaSpYm5pXQZ8PSeKYR5eIqupQJzvgWo4dzmlr+2JbY1gQ2w5zA08vydYJ/w",
+    "L5DnTFo3p1ySBmsu/OoLv7Ii3QVrF0ubz4dwc6RGWLiJc5vWe7ZFZVOZOdryUUWy",
+    "PWhk6uaBrO53/NajI3NFI7NeorkCAwEAAaNTMFEwDgYDVR0PAQH/BAQDAgKkMBMG",
+    "A1UdJQQMMAoGCCsGAQUFBwMBMA8GA1UdEwEB/wQFMAMBAf8wGQYDVR0RBBIwEIIO",
+    "djJzdHJlYW0uY28udnUwDQYJKoZIhvcNAQELBQADggEBAJYhQaiDi0vC1M/QVf4y",
+    "6qen8ESdoBob4ugtGBeizIf9NeNhgs9sMQoJSFnJat/HVYiXfw6o97+CUXfD8psh",
+    "sMsbxcaoLnVeekV1v+xCnessswfki2GPHQprOARD1ljcJE5PxkTXWPyQsgZvx5u6",
+    "qptLu4YLI0Xgbz0uCwjmYd/2SNYI7Xv26blGeTLPemsjqpvsp+mlWsQ+Sat9AC22",
+    "FFo7Lndb26MXkefk/P1KoOaEYvDGWTj62f0XQrlPvSv+g8lRXzYsbr3CCzFnukzI",
+    "1N3rXk2sG0d92W0ugEkra3wVXHzG/Ou89rnLeVrlPJFRioRyyRAqRO7LTfekTANc",
+    "VFg=",
+    "-----END CERTIFICATE-----"
+  ],
+  "key": [
+    "-----BEGIN RSA PRIVATE KEY-----",
+    "MIIEpAIBAAKCAQEAo8McKymPhdzwCnqtxRC/wvNTvzXn2YifpYQxbpDaJySfVpU2",
+    "QBkzYBuhZ7MbG3umbCeEnHMeaTdUrLOQUH6NuoqAkUeH4a5R96J14DfP6L6ij6nS",
+    "IzMcbwx6h4KAFUfdFvZZJTJJratZf3ewVSzW82YksQzpzdH81vOeQcT+OSHSRTYZ",
+    "B6JdjnxwX5BLj4jbJpKlibmldBnw9J4phHl4iq6lAnO+Bajh3OaWv7YltjWBDbDn",
+    "MDTy/J1gn/AvkOdMWjenXJIGay786gu/siLdBWsXS5vPh3BzpEZYuIlzm9Z7tkVl",
+    "U5k52vJRRbI9aGTq5oGs7nf81qMjc0Ujs16iuQIDAQABAoIBACE2EYFjZVsFipzl",
+    "clZT5j/4LxTJLuL8BTyBCbFdqRBlKfdaPW1UbwnfsKUiOq4hLogin49G/XTjJsX7",
+    "iJn6gG3DZv2PnywSuUbaaMN3LjAKcVdnXlmLJQoUYskWmzk1oM3mWf/kKfMRnA3w",
+    "zQ8JD/K+1VQexU/bdUZ2k7LM663ULfgb6GIA6DeJ2VN5CfB+LV97xf4uVZ4TjrtJ",
+    "MrjPiGJP4G1uqR4B2IHkfsubolzlU37B6uaelf6xsl4oawI3scmqtILd0HZ8WZ0+",
+    "wpTAm7X5RqajO8cCFQdUgCQBzJEqt3KNGx5ig6F9ifPVsmEpQYnHHzJ17NAS74A6",
+    "EBYJ4A0CgYEAw3OOGYlFcVn9uoPlW72MWXKQd0lY0pVFZfx38/avK5mcG/YZZSZY",
+    "bw5TmJ8AX1aeL7B6wWHTxZQg9f8CvYQQtyXzQXW3uOmoLEaB7k6yJxHRnVL3jdaD",
+    "Q6yaNBdvuFM63CcPx9raIv2Ox5W0VC8craZj9zLAoVazNmZjStlyS/MCgYEA1n5p",
+    "cpSpbHnLmoBEOndcQaWn+LTTKWwRpJb1dYUeKO0jWvg5KzrTIB+zvh734TaXD1XT",
+    "mE2qzQoJBZFyGAfRF+JXCheTwxbrc92agF28PnuQc0Ay9FpZr0uGenxZ9NsaT7KP",
+    "7+F1B6X9j44PeRt5EnOWocR6S1b0TnNq8SM7XaMCgYEAhBquiQQHM74niNFtTLyp",
+    "CCwvCPFCX9MUvQIP8Y1iiI2iviNwtrVcQHPmfNm7XrUk5gbacaq1gG3GeX6LU5zX",
+    "z3KPIEd4jjsfuA1P9MqsD0wz6aoSOIQs5Kjc8SiGEofu2K5uNB7wIYZP4waEhAHz",
+    "2EsGdiaPnH0FVFeP9R9T6ZECgYEAwE9wram6SabdtLWB9sWjsrwa4PMHTGE3ZFFw",
+    "3CAxDVKoW1yorSi9uFSULEbJymPOhpJV93zTQajYs+RW3lLL1tU5YrQG6Gh5TFYI",
+    "u0TPjVnuBlcuGEWVmYRmmxU49j8n1QLs6I9FBUl/EKG3H8dRAwkdqgZl+3yH6Hq1",
+    "DGShSm8CgYBagj4nwSYlX5t5vuDaW7Srf3vSN4ZeiNjvEFfu30JaFbMax7k6kR0H",
+    "utvy0QlQeHMYXQLb6htQYhN5MXuA1g7YJQZ8dS6PK4cI4fYJGGqSLok6uENJp0F6",
+    "DbK9JsLLTgwrl1DI1+JhAaAQHhPsdcoqvhQsJbR/a+6k2zK46zAA/Q==",
+    "-----END RSA PRIVATE KEY-----"
+  ]
+}
+                ]
+            }
         }
     },
     "outbound": {
