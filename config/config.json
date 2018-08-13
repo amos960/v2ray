@@ -12,12 +12,18 @@
                 {
                     "id": "baef0271-3d4b-9791-9338-e4f54389bb76",
                     "level": 1,
-                    "alterId": 2333
+                    "alterId": 233
                 }
             ]
         },
         "streamSettings": {
             "network": "kcp"
+            "kcpSettings": {
+            "congestion": true,
+            "header": {
+            "type": "wechat-video"
+            }
+            }
         }
     },
     "outbound": {
