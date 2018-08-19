@@ -5,19 +5,19 @@
         "loglevel": "warning"
     },
     "inbound": {
-        "port": 80,
+        "port": 8001,
         "protocol": "vmess",
         "settings": {
             "clients": [
                 {
-                    "id": "cd1ba87f-f039-21f9-9b0c-ae23b3e0d6c7",
+                    "id": "ab8c3b6e-a73e-f183-2f38-c1455e32a9d7",
                     "level": 1,
-                    "alterId": 233
+                    "alterId": 100
                 }
             ]
         },
         "streamSettings": {
-            "network": "ws"
+            "network": "kcp"
         }
     },
     "outbound": {
