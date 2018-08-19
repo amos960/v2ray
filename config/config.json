@@ -5,7 +5,7 @@
         "loglevel": "warning"
     },
     "inbound": {
-        "port": 10001,
+        "port": 80,
         "protocol": "vmess",
         "settings": {
             "clients": [
@@ -17,66 +17,7 @@
             ]
         },
         "streamSettings": {
-            "network": "kcp",
-            "security": "tls",
-            "tlsSettings": {
-                "serverName": "v150-95-198-157.a0f1.g.tyo1.static.cnode.io",
-                "certificates": [
-{
-  "certificate": [
-    "-----BEGIN CERTIFICATE-----",
-    "MIIDSjCCAjKgAwIBAgIQc6GF3wDe8h5EkNgICvMqwjANBgkqhkiG9w0BAQsFADAo",
-    "MRIwEAYDVQQKEwlWMlJheSBJbmMxEjAQBgNVBAMTCVYyUmF5IEluYzAeFw0xODA4",
-    "MTkwMTExMzVaFw0xODExMTcwMjExMzRaMCgxEjAQBgNVBAoTCVYyUmF5IEluYzES",
-    "MBAGA1UEAxMJVjJSYXkgSW5jMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC",
-    "AQEAup7fAKiZFIXS+3+6b9SOGVi+oh8ztbC8D71rvwgeXrrkIn77hDwsntUfRAdD",
-    "dWXDDmHWncmfDEEGp9AkgSJLhow4LvqNc9i2IxhTNY5jYC62t/0CTjnStSTuhPCa",
-    "XcB66w90aNfPTmlH0h/1I7ZosC6/5zPSNHjh7w3L+QH7+rIhMVNqAKFRWcp8iAk1",
-    "1ubl2jjkK5B/Iel+2nkCn8a/l8O4Lw7Lwb6+giSbbhgxkZWPGPKbcMq+EgCmxfqF",
-    "KFJ2Uz1paVIHQ14ESZ/jDw1M0HewFDQvcIJeuGWowJvJTxU5WXEdLQeuzF2LmAcP",
-    "tEBlFKwXZlCeh0gdMr330z9qqwIDAQABo3AwbjAOBgNVHQ8BAf8EBAMCAqQwEwYD",
-    "VR0lBAwwCgYIKwYBBQUHAwEwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHREELzAtgit2",
-    "MTUwLTk1LTE5OC0xNTcuYTBmMS5nLnR5bzEuc3RhdGljLmNub2RlLmlvMA0GCSqG",
-    "SIb3DQEBCwUAA4IBAQCBJpS89sB70T5sHBwMp6DOqZ4I6XkSTMFXedhPRpleqxLE",
-    "wzPZNRMUrUaLYhBr6N8S0ZeZMOIBMjvoHQu4va+EC4sVs2TDdk60wpsKBm2fptTT",
-    "7J0Qb4Xq0CeKeSj/fN/wLKLEF0Qd/Lb8TnqMB/3hfj+F+8/qwOxGbZ6lJo89xEfl",
-    "blsYoEdum48vAwBigMl6VQDuAs+ZvOJEc/el4YbZva2ZO2DyMADmJcZCWWCTjCYc",
-    "rv/NUKgym3G8dVFDE87nMlrnYWMS6QxaRQ9JduncLNbIT3DOmKT/OnEbPlP/Ln8H",
-    "hQyKul1zoq4s4BlAJNW974W0tZ7wUgvxT6XsR+PM",
-    "-----END CERTIFICATE-----"
-  ],
-  "key": [
-    "-----BEGIN RSA PRIVATE KEY-----",
-    "MIIEpAIBAAKCAQEAup7fAKiZFIXS+3+6b9SOGVi+oh8ztbC8D71rvwgeXrrkIn77",
-    "hDwsntUfRAdDdWXDDmHWncmfDEEGp9AkgSJLhow4LvqNc9i2IxhTNY5jYC62t/0C",
-    "TjnStSTuhPCaXcB66w90aNfPTmlH0h/1I7ZosC6/5zPSNHjh7w3L+QH7+rIhMVNq",
-    "AKFRWcp8iAk11ubl2jjkK5B/Iel+2nkCn8a/l8O4Lw7Lwb6+giSbbhgxkZWPGPKb",
-    "cMq+EgCmxfqFKFJ2Uz1paVIHQ14ESZ/jDw1M0HewFDQvcIJeuGWowJvJTxU5WXEd",
-    "LQeuzF2LmAcPtEBlFKwXZlCeh0gdMr330z9qqwIDAQABAoIBAQCh+ZZwieUjzOtM",
-    "YpY8ze3vzfjX2eEVx6nSt4O3MKK7cdbkofZH1bqcuToD35ILaSGdcAnIteCX0DCo",
-    "op2sf0myJC33iHwRmnyrhUdjaoySRLlOhAjmQIXDt6RWOkahLJkDQEy3WuiRlAtE",
-    "M3yfXIkMsebaEz5VUL44sG7jV3ePJGJ7QzYGa6n3hQJyJnsQkYdzQU0FWzTZtJoi",
-    "hTFljRQnYz7ls4QTFXY4oOk/yLvkW9RvbypLuw2nw2B/yROBeI4/Fl0psbsPKCqc",
-    "Q6Bl9t7WJntsiLIANEUvybCTmZe0exP8GNl34gW+gsSm1GAMNPtudOiZIfbNpW2z",
-    "nAOeP9ChAoGBAMLCRr8wl5es08khBnmfD/s3Rnd93hVa9LjP6YX9yOCbG6rikxZf",
-    "GuC1SG/vNVUDg4BzpOIzUp92bRcENwEMk5i5B0xt+w1dTC4G/sPy+9vnb+NSaQhy",
-    "Bhh0WkfZMl5YH5G5M27bio8pdiEtHikxCIXt6yRA0FYemkroVP1tktapAoGBAPVN",
-    "eg+JWEasIZUHCXHPddANgestRwCTy+HitOnrsMKRgpsrcDliM32tXDFlsTQ4fUrp",
-    "TLUq5yRK8KQBDWQkntBj8OllcxeZKvgTT0Dttz8clTDc0HXnEDpm8A7/SnmndVwz",
-    "VT9r7WC61edBa0uXmeCO3idRDgqSuyVgA5NHjM8zAoGAJpUEHOYMcfC79/FB7iAT",
-    "s2ms3QkjUMm3B1Gw6mlvPQedQIooJ1tp4LApDHuv7gqHJ5BBTspqCMsWK2QbXWrX",
-    "Zn7pMjvraydbaxbZq4ncWSENKlRuGE02ZevO4sLlVolQn7a3uLNnTJsjGslsWy6q",
-    "iJWsan8ohpcDa+mAxL/LQhkCgYBaDU5BA9+3Whud9Q5fjJSogzztlBqbuKZBT5Ow",
-    "yEiEtRxoUIMLXeSfP5Q3wihSjmZYqNrzK0Pdi/FZk9VRrSvsPrRDSm38/MrMdXJD",
-    "2MDL13dhj76red74Qa/hIZE6peIsrd+ev8VOHGjIU7jK8GWaDXi6oEPyV7mCWAQX",
-    "/k1QBwKBgQCnVkJWF8NXyuAo7PQ3ip1YUvJZR8BdT8pmj8pqgSwI1CO0BI23rYzM",
-    "Lf/rLz03SCVWNc1EKrombbdpTZZdqJWUlzvasVeOZs4l6qWu/ZPV191J3qPw9QnZ",
-    "fp5Bi7SrKuH8Nr4d2MMef2zZD8GfEJ30rupM+1QKzILbioANSWXDQA==",
-    "-----END RSA PRIVATE KEY-----"
-  ]
-}
-                ]
-            }
+            "network": "ws"
         }
     },
     "outbound": {
