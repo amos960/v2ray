@@ -5,25 +5,19 @@
         "loglevel": "warning"
     },
     "inbound": {
-        "port": 14362,
+        "port": 18819,
         "protocol": "vmess",
         "settings": {
             "clients": [
                 {
-                    "id": "baef0271-3d4b-9791-9338-e4f54389bb76",
+                    "id": "6687c179-d6ba-b637-cf0d-c2f7f7a281b0",
                     "level": 1,
-                    "alterId": 233
+                    "alterId": 512
                 }
             ]
         },
         "streamSettings": {
             "network": "kcp"
-            "kcpSettings": {
-            "congestion": true,
-            "header": {
-            "type": "wechat-video"
-            }
-            }
         }
     },
     "outbound": {
