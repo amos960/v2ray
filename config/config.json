@@ -5,59 +5,28 @@
         "loglevel": "warning"
     },
     "inbound": {
-        "port": 8001,
+        "port": 15936,
         "protocol": "vmess",
         "settings": {
             "clients": [
                 {
                     "id": "ab8c3b6e-a73e-f183-2f38-c1455e32a9d7",
                     "level": 1,
-                    "alterId": 100
+                    "alterId": 233
                 }
             ]
         },
         "streamSettings": {
-            "network": "kcp"
+            "network": "kcp",
+            "kcpSettings": {
+                "header": {
+                "type": "none"
+                }
+            }
         }
     },
     "outbound": {
         "protocol": "freedom",
         "settings": {}
-    },
-    "inboundDetour": [],
-    "outboundDetour": [
-        {
-            "protocol": "blackhole",
-            "settings": {},
-            "tag": "blocked"
-        }
-    ],
-    "routing": {
-        "strategy": "rules",
-        "settings": {
-            "rules": [
-                {
-                    "type": "field",
-                    "ip": [
-                        "0.0.0.0/8",
-                        "10.0.0.0/8",
-                        "100.64.0.0/10",
-                        "127.0.0.0/8",
-                        "169.254.0.0/16",
-                        "172.16.0.0/12",
-                        "192.0.0.0/24",
-                        "192.0.2.0/24",
-                        "192.168.0.0/16",
-                        "198.18.0.0/15",
-                        "198.51.100.0/24",
-                        "203.0.113.0/24",
-                        "::1/128",
-                        "fc00::/7",
-                        "fe80::/10"
-                    ],
-                    "outboundTag": "blocked"
-                }
-            ]
-        }
     }
 }
